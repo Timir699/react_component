@@ -21,6 +21,27 @@ function App() {
           bg = 'blue'      
         />
 
+        <Persons 
+          name = "sohanur rahman"
+          designation = "Data Scientist"
+          color = 'red'
+          bg = 'gray'      
+        />
+
+        <Persons 
+          name = "Asif mahier"
+          designation = "Frontend Developer"
+          color = 'tomato'
+          bg = '#efefef'      
+        />
+
+        <Persons 
+          name = "Sk"
+          designation = "UI UX Master"
+          color = 'brown'
+          bg = 'green'      
+        />
+
 
     </div>
   );
