@@ -5,42 +5,48 @@ import Persons from './components/Persons'
 import './App.css';
 
 function App() {
+  let persons = [
+    {
+      name : "Islam Timir",
+      designation : "Frontend Developer",
+      color : 'orangered',
+      bg : 'gray', 
+      white : 'white'
+    },
+    {
+        name : "Rijwan ahmed",
+          designation : "Backend Developer",
+          color : 'yellow',
+          bg : 'blue' 
+    },
+    {
+      name : "sohanur rahman",
+          designation : "Data Scientist",
+          color : 'red',
+          bg : 'gray'
+    },
+    {
+      name : "Asif mahier",
+      designation : "Frontend Developer",
+      color : 'tomato',
+      bg : '#efefef'
+    },
+    {
+      name : "Sk",
+          designation : "UI UX Master",
+          color : 'brown',
+          bg : 'green' 
+    }
+  ]
   return (
     <div style = {{ margin : "20px"}} >
-        <Persons 
-          name = "Islam Timir"
-          designation = "Frontend Developer"
-          color = 'orangered'
-          bg = 'gray'      
-        />
-
-        <Persons 
-          name = "Rijwan ahmed"
-          designation = "Backend Developer"
-          color = 'yellow'
-          bg = 'blue'      
-        />
-
-        <Persons 
-          name = "sohanur rahman"
-          designation = "Data Scientist"
-          color = 'red'
-          bg = 'gray'      
-        />
-
-        <Persons 
-          name = "Asif mahier"
-          designation = "Frontend Developer"
-          color = 'tomato'
-          bg = '#efefef'      
-        />
-
-        <Persons 
-          name = "Sk"
-          designation = "UI UX Master"
-          color = 'brown'
-          bg = 'green'      
-        />
+      {
+        persons.map( person => {
+          return (
+            <Persons person = {person} />
+          )
+        })
+      }  
 
 
     </div>

@@ -2,10 +2,10 @@ import React from 'react'
 import Person from '../assets/images/Person.jpg'
 
 let Persons = (props) => {
-    let {name , designation, color, bg} = props
+    let {name , designation, color, bg, white} = props.person
     return (
         <div style = {{
-            background : bg,
+            background :  bg ? bg : white,
             padding : "20px",
             marginBottom: "20px"
         }}>
