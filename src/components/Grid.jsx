@@ -3,7 +3,7 @@ import '../components/Grid.css'
 let Grid = () => {
     return (
         <div>
-            <div className = "parent"></div>
+            <div className = "parent">
                 <div className = "div1"> </div>
                 <div className = "div2"> </div>
                 <div className = "div3"> </div>
@@ -17,7 +17,8 @@ let Grid = () => {
                 <div className = "div11"> </div>
                 <div className = "div12"> </div>
                 <div className = "div13"> </div>
-            <div className = "div14"> </div>
+                <div className = "div14"> </div>
+            </div>
         </div> 
     )
 }
