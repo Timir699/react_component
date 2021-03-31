@@ -1,13 +1,10 @@
-import '../footer/footer.css'
-let Footer = (props) => {
 
-    let {text, as:AS} = props
+let Footer = () => {
     return (
-        <div className = "footer">
-            {text}
+        <div style = {{ background : "gray", height : "50px", width : "100vw"}}>
+            <p style = {{ textAlign : "center", alignItems : "center"}}>© 2018 Copyright: Rijwan Hossain</p>
         </div>
     )
 }
-
 
 export default Footer

@@ -1,20 +1,15 @@
-import '../main/main.css'
+import Left from './left/Left'
+import Right from './right/Right'
 
 
-let Main = (props) => {
-    let {left, right} = props
+let Main = () => {
     return (
-        <div className = "main">
-            <div className="sidebar">
-                {left}
-            </div>
-            <div className="right">
-                {right} 
-            </div>
+        <div style = {{ display : "flex" }}>
+            <Left />
+            <Right />
         </div>
     )
 }
-
 
 
 export default Main
